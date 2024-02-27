@@ -117,5 +117,7 @@ int main(){
         bool isInside = shapes[i]->isPointInside(Point(2, 2));
         string result = isInside ? "Point is inside" : "Point is outside";
         cout << result << endl;
+
+        delete shape;
     }
 }
