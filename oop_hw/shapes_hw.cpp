@@ -16,6 +16,14 @@ class Shape{
     public:
     string shapeName = "Shape";
 
+    Shape() {
+        cout << shapeName << " created" << endl;
+    }
+
+    ~Shape() {
+        cout << shapeName << " destroyed" << endl;
+    }
+
     void setShapeName(string name) {
         shapeName = name;
     }
